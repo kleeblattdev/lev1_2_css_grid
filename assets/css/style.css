@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    margin: 10px;
+    gap: 10px;
+
+    /* first grid layout */
+/*     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+        "redArea redArea blueArea blueArea"
+        "greenArea purpleArea purpleArea purpleArea"
+        "yellowArea yellowArea yellowArea yellowArea"; */
+
+        /* second grid layout */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        "redArea redArea redArea redArea"
+        "blueArea blueArea greenArea greenArea"
+        "blueArea blueArea purpleArea1 purpleArea2";
+
+        /* second grid layout */
+        ;
+}
+
+main section{
+    border-radius: 10px;
+    height: 150px;
+}
+
+.red{
+    background-color: red;
+    grid-area: redArea;
+}
+
+.blue{
+    background-color: blue;
+    height: 310px;
+    grid-area: blueArea;
+}
+
+.green{
+    background-color: green;
+    grid-area: greenArea;
+}
+
+.purple{
+    background-color: purple;
+    grid-area: purpleArea1;
+}
+
+
+.yellow{
+    background-color: yellow;
+    grid-area: yellowArea;;
+}
+
+.purple2{
+    background-color: purple;
+    grid-area: purpleArea2;
+}
